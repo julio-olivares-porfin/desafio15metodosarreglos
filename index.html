@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Lo que tengo que hacer HOY</title>
+</head>
+<body>
+  <header>
+    <div class="titulo">
+      <p>No dejes para mañana lo que puedes hacer <span class="texto-tachado">hoy</span> <span class="texto-destacado">AHORA!</span></p>
+    </div>
+  </header>
+  <main>
+    <section class="seccion-ingreso columna">
+      <div class="agregar-tarea-contenedor columna">
+        <div class="etiqueta-contenedor">
+          <label for="nueva-tarea">¿Qué tienes que hacer?</label>
+        </div>
+        <div class="entrada-contenedor fila">
+          <input type="text" name="nueva-tarea" id="nueva-tarea" class="entrada-tarea" placeholder="tengo que...">
+          <button class="boton-tarea" id="boton-agregar-tarea">Agregar</button>
+        </div>
+      </div>
+    </section>
+    <section class="seccion-contador columna">
+      <div class="contador-tarea-contenedor columna">
+        <div id="contenedor-total" class="fila">
+          <p class="total-tarea">Total:</p>
+          <p id="total-tarea" class="total-tarea"></p>
+        </div>
+        <div id="realizado-contenedor" class="fila">
+          <p class="total-tarea">Realizadas:</p>
+          <p id="realizado-tarea" class="total-tarea"></p>
+        </div>
+      </div>
+    </section>
+    <section id="seccion-tareas">
+      <div class="seccion-tareas-contenedor columna">
+      </div>
+    </section>
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>

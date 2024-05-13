@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sacramento&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/assets/img/texturapapel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.titulo {
+  color: rgb(30, 30, 104);
+  font-size: xx-large;
+  font-family: "Indie Flower", cursive;
+}
+
+.texto-tachado {
+  text-decoration: line-through;
+  text-decoration-color: rgb(186, 31, 31);
+}
+
+.texto-destacado {
+  color: rgb(186, 31, 31);
+  font-size: 70px;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.seccion-ingreso {
+  display: flex;
+  gap: 20px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.agregar-tarea-contenedor {
+  gap: 10px;
+  padding: 1rem;
+  font-family: "Lato", sans-serif;
+  color: rgb(30, 30, 104);
+}
+
+.entrada-contenedor {
+  gap: 1rem;
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.entrada-tarea {
+  width: 800px;
+  height: 40px;
+  padding: 0.5rem;
+}
+
+.boton-tarea {
+  padding: 0rem 2rem;
+  border: none;
+  background-color: rgb(30, 30, 104);
+  color: white;
+  cursor: pointer;
+}
+
+.seccion-contador {
+  font-family: "Lato", sans-serif;
+  margin-left: 20px;
+  color: rgb(30, 30, 104);
+}
+
+.contador-tarea-contenedor {
+  width: 600px;
+}
+
+#contenedor-total, #realizado-contenedor {
+  gap: 5px;
+}
+
+.total-tarea {
+  font-size: 1rem;
+}
+
+.seccion-tareas-contenedor {
+  padding: 0.5rem 2rem;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(30, 30, 104);
+  margin: 0.5rem 1rem;
+}
+
+.titulo-tarea-contenedor {
+  align-items: center;
+  gap: 1rem;
+}
+
+.titulo-tarea h3, .id-titulo h3 {
+  color: rgb(30, 30, 104);
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: "Indie Flower", cursive;
+}
+
+.realizado {
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.boton-realizado {
+  background-color: rgb(30, 30, 104);
+  color: white;
+}
+
+.boton-eliminar {
+  border: 1px solid rgb(30, 30, 104);
+}
+
+.boton-realizado, .boton-eliminar {
+  padding: 1rem 2rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+}
+
+.boton-eliminar:hover, .boton-realizado:hover {
+  transition: .3s ease-in-out;
+}
+
+.boton-realizado:hover {
+  background-color: rgb(30, 104, 44);
+  color: white;
+  border: 1px solid white;
+}
+
+.realizado-texto {
+  text-decoration: line-through;
+  text-decoration-color: rgb(186, 31, 31);
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  background-color: rgb(22, 76, 31);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.2rem;
+}
+
